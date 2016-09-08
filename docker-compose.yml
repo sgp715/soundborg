@@ -15,10 +15,10 @@ services:
         container_name: front-ui
         image: front-ui
         expose:
-            - "8000"
+            - "8080"
     aiapi:
         build: ./aiapi-service
         container_name: aiapi
         image: aiapi
         expose:
-            - "3000"
+            - "8000"

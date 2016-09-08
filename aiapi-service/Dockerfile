@@ -2,7 +2,9 @@ FROM python:3.5.2
 
 MAINTAINER Sebastian Perez
 
-ADD ./storage /usr/src
+RUN mkdir /usr/src/storage
+RUN mkdir /usr/src/storage/songs
+RUN mkdir /usr/src/storage/remix
 
 ADD ./aiapi /usr/src/aiapi
 ENV AIAPI=/usr/src/aiapi
