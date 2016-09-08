@@ -2,9 +2,8 @@ FROM node:argon
 
 MAINTAINER Sebastian Perez
 
-ADD ./npm-installs.sh ./
-#RUN chmod +x ./script/npm-installs.sh
-RUN ./npm-installs.sh
+ADD ./ ./npm-installs.sh
+CMD ["npm-installs.sh"]
 
 ADD ./package.json /usr/src
 

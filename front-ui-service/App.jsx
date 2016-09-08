@@ -1,14 +1,16 @@
-import React from 'react';
+var React = require('react');
+var FileBox = require('./FileBox.jsx');
 
-class App extends React.Component {
+var App = React.createClass({
 
-    render() {
-    	return (
-    	   <div>
-    	      Hello, React!
-    	   </div>
-    	);
+    render: function() {
+        return (
+          <div>
+            <FileBox  source="http://jsonplaceholder.typicode.com" />
+          </div>
+        );
     }
-}
 
-export default App;
+});
+
+module.exports = App;
