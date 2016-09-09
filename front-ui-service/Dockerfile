@@ -2,6 +2,10 @@ FROM node:argon
 
 MAINTAINER Sebastian Perez
 
+ENV TERM=xterm
+RUN apt-get update
+RUN apt-get install -y nano
+
 ADD ./npm-installs.sh ./
 RUN ./npm-installs.sh
 

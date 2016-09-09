@@ -1,7 +1,6 @@
-var config = {
+	var config = {
 
     entry: [
-	'webpack-dev-server/client?http://0.0.0.0:8080',
 	'./main.js'
 	],
 
